@@ -46,6 +46,7 @@ namespace MarsQA_1.SpecflowPages.Pages
         public static void CUpdate()
         {
             System.Threading.Thread.Sleep(5000);
+            CertificateTabClick.Click();
             EditCertificateBtn.Click();
             CertificateNameTextbox.Clear();
             CertificateFromTextbox.Clear();
@@ -58,6 +59,7 @@ namespace MarsQA_1.SpecflowPages.Pages
         public static void CDelete()
         {
             System.Threading.Thread.Sleep(5000);
+            CertificateTabClick.Click();
             DeleteCertificateBtn.Click();
         }
 

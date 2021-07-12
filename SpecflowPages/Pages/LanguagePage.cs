@@ -40,9 +40,10 @@ namespace MarsQA_1.SpecflowPages.Pages
 
         }
 
-        public static void SUpdate()
+        public static void LUpdate()
         {
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(2000);
+            LanguageTabClick.Click();
             EditLanguageBtn.Click();
             LanguageTextbox.Clear();
             LanguageTextbox.SendKeys("updatedLanguage");
@@ -50,9 +51,10 @@ namespace MarsQA_1.SpecflowPages.Pages
             UpdateLanguageBtn.Click();
 
         }
-        public static void SDelete()
+        public static void LDelete()
         {
             System.Threading.Thread.Sleep(5000);
+            LanguageTabClick.Click();
             DeleteLanguageBtn.Click();
         }
     }

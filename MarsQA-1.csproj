@@ -151,7 +151,6 @@
   <ItemGroup>
     <Compile Include="Feature\Certificate.cs" />
     <Compile Include="Feature\Description.cs" />
-    <Compile Include="Feature\Education.cs" />
     <Compile Include="Feature\Language.cs" />
     <Compile Include="Feature\Login.cs" />
     <Compile Include="Feature\Skill.cs" />

@@ -19,13 +19,13 @@ namespace MarsQA_1.Feature
         [Given(@"seller is able to update language")]
         public void GivenSellerIsAbleToUpdateLanguage()
         {
-            LanguagePage.SUpdate();
+            LanguagePage.LUpdate();
         }
         
         [Given(@"seller is able to delete language")]
         public void GivenSellerIsAbleToDeleteLanguage()
         {
-            LanguagePage.SDelete();
+            LanguagePage.LDelete();
         }
     }
 }

@@ -21,10 +21,10 @@ namespace MarsQA_1.SpecflowPages.Pages
         private static IWebElement SkillLevelDD => Driver.driver.FindElement(By.XPath("//select[@class='ui fluid dropdown']"));
         private static IWebElement AddSkillBtn => Driver.driver.FindElement(By.XPath("//input[@value='Add']"));
         private static IWebElement CancelAddLanguageBtn => Driver.driver.FindElement(By.XPath("//div[@class='ui bottom attached tab segment tooltip-target active']//input[@value='Cancel']"));
-        private static IWebElement SkillPencilIconBtn => Driver.driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[3]/form[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/span[1]/i[1]"));
+        private static IWebElement SkillEditBtn => Driver.driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[3]/form[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/span[1]/i[1]"));
         private static IWebElement UpdateSkillBtn => Driver.driver.FindElement(By.XPath("//input[@value='Update']"));
         private static IWebElement CancelUpdateSkillBtn => Driver.driver.FindElement(By.XPath("//input[@value='Cancel']"));
-        private static IWebElement SkillCrossIconBtn => Driver.driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[3]/form[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/span[2]/i[1]"));
+        private static IWebElement SkillDeleteBtn => Driver.driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[3]/form[1]/div[3]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/span[2]/i[1]"));
 
 
         public static void SAdd()
@@ -38,12 +38,16 @@ namespace MarsQA_1.SpecflowPages.Pages
             SkillLevelDD.Click();
             Driver.driver.FindElement(By.XPath($"//option[@value='Beginner']")).Click();
             AddSkillBtn.Click();        
+
+
+
         }
 
         public static void SUpdate()
         {
             System.Threading.Thread.Sleep(5000);
-            SkillPencilIconBtn.Click();
+            SkillTabClick.Click();
+            SkillEditBtn.Click();
             SkillTextbox.Clear();
             SkillTextbox.SendKeys("updatedSkill");
             Driver.driver.FindElement(By.XPath($"//option[@value='Expert']")).Click();
@@ -62,17 +66,19 @@ namespace MarsQA_1.SpecflowPages.Pages
         public static void SCancel()
         {
             System.Threading.Thread.Sleep(2000);
-            SkillPencilIconBtn.Click();
+            SkillEditBtn.Click();
             CancelUpdateSkillBtn.Click();
             Console.WriteLine("Updation Process Canceled");
 
         }
 
         public static void SDelete()
+
         {
             System.Threading.Thread.Sleep(1000);
+            SkillTabClick.Click();
            // if(SkillTextbox == "Dancing")
-            SkillCrossIconBtn.Click();
+            SkillDeleteBtn.Click();
 
 
 

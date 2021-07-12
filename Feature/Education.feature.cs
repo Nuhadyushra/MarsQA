@@ -100,12 +100,12 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
-testRunner.Given("Seller clicks on certificate tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Seller clicks on Education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Add Details for certification"});
+                            "Add Details for Education"});
 #line 5
-testRunner.When("seller wants to add certificate", ((string)(null)), table1, "When ");
+testRunner.When("seller wants to add Education", ((string)(null)), table1, "When ");
 #line hidden
 #line 7
 testRunner.Then("seller clicks on Add button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -141,14 +141,14 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 10
-testRunner.Given("Seller clicks on certificate tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Seller clicks on Education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "click on pencil icon to update"});
                 table2.AddRow(new string[] {
-                            "Update Details for certification"});
+                            "Update Details for Education"});
 #line 11
-testRunner.When("seller wants to update certificate", ((string)(null)), table2, "When ");
+testRunner.When("seller wants to update Education", ((string)(null)), table2, "When ");
 #line hidden
 #line 14
 testRunner.Then("seller clicks on Update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -184,10 +184,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 17
-testRunner.Given("Seller clicks on certificate tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Seller clicks on Education tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 18
-testRunner.When("seller wants to delete certificate", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("seller wants to delete Education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 19
 testRunner.Then("seller clicks on cross icon button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
