@@ -24,7 +24,7 @@ namespace MarsQA_1.SpecflowPages.Pages
         public static void LAdd()
         {
             //wait for the page to load
-            System.Threading.Thread.Sleep(7000);
+            System.Threading.Thread.Sleep(7000); 
             // LanguageTabClick.Click();
             //add all the rows from excel file
             for (int i = 2; i <= ExcelLibHelper.rowcount; i++)
